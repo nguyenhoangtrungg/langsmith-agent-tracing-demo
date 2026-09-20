@@ -1,0 +1,4 @@
+langsmith==0.12.1
+langchain-core==1.6.3
+python-dotenv==1.2.3
+pytest==9.1.1

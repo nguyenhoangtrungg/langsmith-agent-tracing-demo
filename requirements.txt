@@ -1,0 +1,6 @@
+langsmith==0.12.1
+langchain-core==1.6.3
+langchain-google-genai==4.4.0
+langchain-openai==1.6.0
+python-dotenv==1.2.3
+pytest==9.1.1
