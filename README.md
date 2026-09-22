@@ -20,6 +20,7 @@ python -m pip install -r requirements-offline.txt
 python trace_demo.py --prompt-version v1 --offline
 python trace_demo.py --prompt-version v2 --offline
 python compare_runs.py
+python -m pytest -q
 ```
 
 Kết quả mong đợi là V1 `fail` với `missing_required_headings`, còn V2 `pass`.
@@ -55,4 +56,9 @@ trace_demo.py             agent, tool schema, validator và CLI
 compare_runs.py           so sánh report V1/V2
 prompts/v1.txt, v2.txt    hai prompt cuối cùng của bài
 samples/injection_note.md tài liệu đầu vào có lệnh cài để demo prompt injection
+tests/test_trace_demo.py  bộ test offline gồm 36 ca
+VERIFICATION.md           phạm vi và kết quả kiểm chứng
 ```
+
+Các file trên nằm ngay tại thư mục gốc repository; không có thư mục con
+`project/`. Kết quả kiểm chứng chi tiết nằm trong [VERIFICATION.md](VERIFICATION.md).
